@@ -1,0 +1,145 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+
+    <style>
+        .rotateimg {
+            -webkit-transform: rotate({{Degree}}deg);
+            -moz-transform: rotate({{Degree}}deg);
+            -ms-transform: rotate({{Degree}}deg);
+            -o-transform: rotate({{Degree}}deg);
+            transform: rotate({{Degree}}deg);
+            transform-origin: right bottom;
+        }
+
+        body {
+            background-image: url({% static 'coronavirus.png' %});
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h4 {
+            font-family: 'Arial', sans-serif;
+            color: #1F618D;
+        }
+
+        .navbar {
+            background-color: #1F618D;
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: #fff;
+        }
+
+        .btn-go-back {
+            background-color: #FFC300;
+            color: #fff;
+            font-weight: bold;
+            border: none;
+        }
+
+        .btn-go-back:hover {
+            background-color: #FFD700;
+        }
+
+        .probability-text {
+            font-size: 30px;
+            font-weight: bold;
+            color: #1F618D;
+        }
+
+        .meter {
+            text-align: center;
+            position: relative;
+        }
+
+        /* #meter {
+            width: 537px;
+            height: 317px;
+        } */
+
+        /* #stick {
+            width: 197px;
+            height: 35px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%) rotate({{Degree}}deg);
+                    
+        } */
+
+        .thanks-text {
+            font-size: 20px;
+            color: #1F618D;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+
+    <title>NIPAH VIRUS Probability Detector</title>
+</head>
+<body>
+<div class="container">
+    <div class="text-center mt-3">
+        <h4>National Institute of Technology Karnataka, Surathkal</h4>
+        <p>Department of Information Technology</p>
+        <p>Chaithanya Swaroop 211AI010</p>
+        <p>Gnana Sagar Reddy 211AI042</p>
+        <p>Project done under the guidance of Associate Prof. Jaidhar CD</p>
+    </div>
+
+    <nav class="navbar navbar-light">
+        <a class a class="navbar-brand" style="color: white;">Let's Fight with Together</a>
+    </nav>
+
+    <button type="submit" class="btn btn-go-back btn-lg" onClick="javascript:history.go(-1)">Go Back</button>
+
+    <p class="probability-text" align="center">Patient's probability of being NIPAH positive is {{InfProb}} %</p>
+
+    <!-- <div class="meter">
+        <img src="{% static 'alert_meter.png' %}" alt="alert meter" id="meter" />
+        <img class="rotateimg" id="stick" src="{% static 'alert_stick.png' %}" alt="alert stick" /> -->
+    <!-- </div> -->
+
+    <p class="thanks-text" align="center">Thanks for using NIPAH VIRUS Probability Detector.</p>
+    <p class="thanks-text" align="center">Stay happy, Stay safe, Stay home.</p>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrap...
+</body>
+</html>
