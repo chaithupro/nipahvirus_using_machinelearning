@@ -48,3 +48,6 @@ To run this system, the following Python libraries are required:
 3. pandas
 4. django
 
+
+if you have any queries or comments feel free to contact : munnachaithanya@gmail.com
+
